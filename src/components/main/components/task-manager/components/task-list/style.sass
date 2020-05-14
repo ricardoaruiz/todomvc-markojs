@@ -1,0 +1,38 @@
+.task-list
+    list-style: none
+
+    li
+        display: grid
+        grid-template-columns: 20px 1fr 60px
+        padding: 10px
+        border-bottom: 1px solid #ecebeb
+
+        &:hover           
+            button
+                visibility: visible                       
+
+        input
+            align-self: center
+
+        p
+            font-size: 1.5rem
+            margin-left: 15px
+            justify-self: start
+            align-self: center
+            color: rgba(0,0,0,.8)
+
+            &.done
+                text-decoration: line-through
+                color: rgba(0,0,0,.3)
+
+        button
+            border: none
+            background: transparent
+            cursor: pointer
+            visibility: hidden
+            outline: none
+            font-weight: bold
+            font-size: 1.2rem
+            align-self: center
+            
+            

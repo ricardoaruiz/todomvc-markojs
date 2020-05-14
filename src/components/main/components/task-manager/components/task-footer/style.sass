@@ -1,0 +1,44 @@
+.task-footer
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding: 5px 10px
+
+    .task-footer-filters
+        button
+            border: none
+            background: transparent
+            margin-left: 5px
+            border: 1px solid #fff
+            border-radius: 5px
+            outline: none;
+
+            &:hover
+                border: 1px solid rgba(0,0,0,.3)
+
+            &.active
+                border: 1px solid rgba(0,0,0,.3)
+
+    .task-footer-actions
+        a
+            text-decoration: none
+            color: #333
+
+            &.hide
+                visibility: hidden
+
+            &:hover
+                text-decoration: underline
+
+@media (max-width: 500px)
+    .task-footer
+        padding-top: 10px
+
+        .task-footer-filters
+            order: 1
+            width: 400px
+
+            button
+                font-size: .8rem

@@ -1,0 +1,6 @@
+ul.task-list
+    for|task, index| of=input.tasks
+        li
+            input type="checkbox" value=task.id checked=task.done on-click('toggleFinish')
+            p class={done : task.done} -- ${task.description}
+            button title="Remover" on-click('delete', task.id) -- X

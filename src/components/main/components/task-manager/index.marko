@@ -1,0 +1,4 @@
+div.task-container
+    task-input placeholder="What needs to be done?" value=state.task on-change('handleTaskInput') on-endChange('addTask')
+    task-list tasks=state.tasks on-toggleFinishTask('toggleFinishTask') on-deleteTask('deleteTask')
+    task-footer itemsLeft=state.itemsLeft hasFinished=state.hasFinished on-filter('filter') on-clearCompleted('clearCompleted')

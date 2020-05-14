@@ -1,0 +1,10 @@
+footer.task-footer
+    div -- ${input.itemsLeft} itens left
+
+    div.task-footer-filters
+        button class={ active : state.activeFilter === 'all' } on-click('filter','all') -- All
+        button class={ active : state.activeFilter === 'active' } on-click('filter','active') -- Active
+        button class={ active : state.activeFilter === 'completed' } on-click('filter','completed') -- Completed
+
+    div.task-footer-actions
+        a class={hide : !input.hasFinished} href="#" on-click('clearCompleted') -- Clear Completed

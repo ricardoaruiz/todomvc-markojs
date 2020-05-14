@@ -1,0 +1,24 @@
+.task-input-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 10px
+    border-bottom: 1px solid rgba(0,0,0,.1)
+
+    .task-label
+       &::before
+            content: '❯'
+            font-size: 1.57rem
+            color: rgba(0,0,0,.2)
+
+    .task-input 
+        padding: 16px
+        font-size: 1.71rem
+        color: inherit
+        width: 100%
+        border: none
+        outline: none
+
+        &::placeholder 
+            color: rgba(0,0,0,.2)
+            font-style: italic
